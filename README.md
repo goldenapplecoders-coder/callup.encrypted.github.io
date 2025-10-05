@@ -1,6 +1,3 @@
-Here is a comprehensive, long-form README.md for your QODE STUDIO business website, designed to be professional, informative, and approximately 700 lines long.
-
-```markdown
 # QODE STUDIO - Web Development, Design & Game Development
 
 ![QODE STUDIO Banner](https://via.placeholder.com/1200x400/6366f1/ffffff?text=QODE+STUDIO) <!-- Replace with your actual banner image -->
