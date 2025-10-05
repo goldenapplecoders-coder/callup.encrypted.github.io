@@ -88,7 +88,7 @@ Visit our live website: [https://qodestudio.com](https://qodestudio.com) <!-- Re
 
 ## 📦 Project Structure
 
-```
+
 
 qode-studio-website/
 │
@@ -121,7 +121,7 @@ qode-studio-website/
 └──.github/                   # GitHub configuration
 └── workflows/             # CI/CD workflows (if applicable)
 
-```
+
 
 ## ⚙️ Installation & Setup
 
