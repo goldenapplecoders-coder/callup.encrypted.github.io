@@ -86,42 +86,6 @@ Visit our live website: [https://qodestudio.com](https://qodestudio.com) <!-- Re
 | Font Awesome | Additional icons (if needed) | 6.4.0 |
 | Google Fonts | Typography (if needed) | Latest |
 
-## 📦 Project Structure
-
-
-
-qode-studio-website/
-│
-├──index.html                 # Main HTML file
-├──README.md                  # Project documentation (this file)
-├──LICENSE                    # License file
-│
-├──assets/                    # Static assets directory
-│├── css/
-││   └── style.css          # Main stylesheet (embedded in HTML)
-│├── js/
-││   └── script.js          # Main JavaScript (embedded in HTML)
-│├── images/                # Image assets
-││   ├── logo.svg           # Company logo
-││   ├── hero-bg.jpg        # Hero section background
-││   ├── portfolio/
-││   │   ├── project-1.jpg
-││   │   ├── project-2.jpg
-││   │   └── project-3.jpg
-││   └── screenshots/       # Documentation screenshots
-│└── icons/                 # SVG icons
-│├── web-dev.svg
-│├── ui-ux.svg
-│└── game-dev.svg
-│
-├──docs/                      # Additional documentation
-│├── deployment.md          # Deployment guide
-│└── customization.md       # Detailed customization guide
-│
-└──.github/                   # GitHub configuration
-└── workflows/             # CI/CD workflows (if applicable)
-
-
 
 ## ⚙️ Installation & Setup
 
