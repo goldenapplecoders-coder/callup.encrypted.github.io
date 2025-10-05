@@ -103,7 +103,8 @@ Visit our live website: [https://qodestudio.com](https://qodestudio.com) <!-- Re
    cd qode-studio-website
 ```
 
-## Alternatively, download the ZIP file and extract it to your desired directory.
+### Alternatively, download the ZIP file and extract it to your desired directory.
+______
 
 1. Open in Code Editor
    ```bash
