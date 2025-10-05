@@ -4,20 +4,20 @@
 
 ## 📋 Table of Contents
 
-- [Overview](#-overview)
-- [✨ Features](#-features)
-- [🚀 Live Demo](#-live-demo)
-- [🛠️ Technologies Used](#️-technologies-used)
-- [📦 Project Structure](#-project-structure)
-- [⚙️ Installation & Setup](#️-installation--setup)
-- [🎨 Customization Guide](#-customization-guide)
-- [📱 Responsive Design](#-responsive-design)
-- [🧩 Component Overview](#-component-overview)
-- [🔧 Configuration](#-configuration)
-- [📄 License](#-license)
-- [🤝 Contributing](#-contributing)
-- [📞 Contact & Support](#-contact--support)
-- [🙏 Acknowledgments](#-acknowledgments)
+- [Overview
+- [✨ Features
+- [🚀 Live Demo
+- [🛠️ Technologies Used
+- [📦 Project Structure
+- [⚙️ Installation & Setup
+- [🎨 Customization Guide
+- [📱 Responsive Design
+- [🧩 Component Overview
+- [🔧 Configuration
+- [📄 License
+- [🤝 Contributing
+- [📞 Contact & Support
+- [🙏 Acknowledgments
 
 ## 🎯 Overview
 
