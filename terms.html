@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service | QODE STUDIO</title>
+    <style>
+        /* Base Styles & Variables */
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #f59e0b;
+            --dark: #1f2937;
+            --light: #f8fafc;
+            --gray: #6b7280;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header & Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+
+        header.scrolled {
+            background: white;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo svg {
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            color: var(--dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* Terms Content */
+        .terms-content {
+            background: white;
+            border-radius: 10px;
+            padding: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
+        }
+
+        .terms-section {
+            margin-bottom: 40px;
+        }
+
+        .terms-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .terms-section h4 {
+            font-size: 1.2rem;
+            margin: 20px 0 10px;
+            color: var(--dark);
+        }
+
+        .terms-section p {
+            margin-bottom: 15px;
+            color: var(--gray);
+        }
+
+        .terms-section ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .terms-section li {
+            margin-bottom: 10px;
+            color: var(--gray);
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: var(--gray);
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .table-of-contents {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .table-of-contents h4 {
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .table-of-contents ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        .table-of-contents li {
+            margin-bottom: 8px;
+        }
+
+        .table-of-contents a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .table-of-contents a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #d1d5db;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        .social-link svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #9ca3af;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+            }
+
+            .nav-links li {
+                margin: 15px 0;
+            }
+
+            .terms-content {
+                padding: 30px 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M13 3v10h10V3H13zM3 3v10h8V3H3zm10 18v-8h8v8h-8zM3 21v-8h8v8H3z"/>
+                    </svg>
+                    QODE STUDIO
+                </a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="index.html#contact" class="btn">Get Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Terms of Service Section -->
+    <section style="padding-top: 140px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Terms of Service</h2>
+                <p>Please read these terms carefully before using our services</p>
+            </div>
+            
+            <div class="terms-content">
+                <div class="table-of-contents">
+                    <h4>Table of Contents</h4>
+                    <ul>
+                        <li><a href="#agreement">1. Agreement to Terms</a></li>
+                        <li><a href="#services">2. Our Services</a></li>
+                        <li><a href="#intellectual-property">3. Intellectual Property Rights</a></li>
+                        <li><a href="#user-representations">4. User Representations</a></li>
+                        <li><a href="#prohibited-activities">5. Prohibited Activities</a></li>
+                        <li><a href="#user-generated-contributions">6. User Generated Contributions</a></li>
+                        <li><a href="#service-management">7. Service Management</a></li>
+                        <li><a href="#privacy-policy">8. Privacy Policy</a></li>
+                        <li><a href="#term-termination">9. Term and Termination</a></li>
+                        <li><a href="#modifications-interruptions">10. Modifications and Interruptions</a></li>
+                        <li><a href="#governing-law">11. Governing Law</a></li>
+                        <li><a href="#dispute-resolution">12. Dispute Resolution</a></li>
+                        <li><a href="#corrections">13. Corrections</a></li>
+                        <li><a href="#disclaimer">14. Disclaimer</a></li>
+                        <li><a href="#limitations-liability">15. Limitations of Liability</a></li>
+                        <li><a href="#indemnification">16. Indemnification</a></li>
+                        <li><a href="#user-data">17. User Data</a></li>
+                        <li><a href="#electronic-communications">18. Electronic Communications</a></li>
+                        <li><a href="#miscellaneous">19. Miscellaneous</a></li>
+                        <li><a href="#contact-us">20. Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section" id="agreement">
+                    <h3>1. Agreement to Terms</h3>
+                    <p>These Terms of Service constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you") and QODE STUDIO ("we," "us," or "our"), concerning your access to and use of the https://qodestudio.com website as well as any other media form, media channel, mobile website or mobile application related, linked, or otherwise connected thereto (collectively, the "Site").</p>
+                    <p>You agree that by accessing the Site, you have read, understood, and agree to be bound by all of these Terms of Service. If you do not agree with all of these Terms of Service, then you are expressly prohibited from using the Site and you must discontinue use immediately.</p>
+                </div>
+                
+                <div class="terms-section" id="services">
+                    <h3>2. Our Services</h3>
+                    <p>QODE STUDIO provides web development, UI/UX design, and game development services. The information on the Site is for general information purposes and does not constitute advice or a definitive offer to perform services.</p>
+                    
+                    <h4>2.1 Service Provision</h4>
+                    <p>We offer the following services:</p>
+                    <ul>
+                        <li><strong>Web Development:</strong> Custom website and web application development using modern technologies</li>
+                        <li><strong>UI/UX Design:</strong> User interface and user experience design services</li>
+                        <li><strong>Game Development:</strong> Development of interactive games for various platforms</li>
+                        <li><strong>Consulting:</strong> Technical consulting and advisory services</li>
+                    </ul>
+                    
+                    <h4>2.2 Project Agreements</h4>
+                    <p>All service engagements require a separate project agreement that outlines specific terms, deliverables, timelines, and payment schedules. These Terms of Service govern your use of our Site, while project-specific terms will govern individual service engagements.</p>
+                </div>
+                
+                <div class="terms-section" id="intellectual-property">
+                    <h3>3. Intellectual Property Rights</h3>
+                    <p>Unless otherwise indicated, the Site is our proprietary property and all source code, databases, functionality, software, website designs, audio, video, text, photographs, and graphics on the Site (collectively, the "Content") and the trademarks, service marks, and logos contained therein (the "Marks") are owned or controlled by us or licensed to us, and are protected by copyright and trademark laws and various other intellectual property rights and unfair competition laws of the United States, international copyright laws, and international conventions.</p>
+                    
+                    <h4>3.1 User Rights</h4>
+                    <p>We grant you a limited license to access and use the Site for your personal, non-commercial use. No Content may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
+                    
+                    <h4>3.2 Project Deliverables</h4>
+                    <p>Upon full payment for services rendered, clients receive ownership rights to the final deliverables as specified in the project agreement. QODE STUDIO retains the right to display completed work in our portfolio and marketing materials unless otherwise agreed in writing.</p>
+                </div>
+                
+                <div class="terms-section" id="user-representations">
+                    <h3>4. User Representations</h3>
+                    <p>By using the Site, you represent and warrant that:</p>
+                    <ul>
+                        <li>All registration information you submit will be true, accurate, current, and complete</li>
+                        <li>You will maintain the accuracy of such information and promptly update such registration information as necessary</li>
+                        <li>You have the legal capacity and you agree to comply with these Terms of Service</li>
+                        <li>You are not a minor in the jurisdiction in which you reside</li>
+                        <li>You will not access the Site through automated or non-human means, whether through a bot, script, or otherwise</li>
+                        <li>You will not use the Site for any illegal or unauthorized purpose</li>
+                        <li>Your use of the Site will not violate any applicable law or regulation</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section" id="prohibited-activities">
+                    <h3>5. Prohibited Activities</h3>
+                    <p>You may not access or use the Site for any purpose other than that for which we make the Site available. The Site may not be used in connection with any commercial endeavors except those that are specifically endorsed or approved by us.</p>
+                    
+                    <p>As a user of the Site, you agree not to:</p>
+                    <ul>
+                        <li>Systematically retrieve data or other content from the Site to create or compile, directly or indirectly, a collection, compilation, database, or directory without written permission from us</li>
+                        <li>Make any unauthorized use of the Site, including collecting usernames and/or email addresses of users by electronic or other means for the purpose of sending unsolicited email</li>
+                        <li>Use the Site to advertise or offer to sell goods and services</li>
+                        <li>Circumvent, disable, or otherwise interfere with security-related features of the Site</li>
+                        <li>Engage in unauthorized framing of or linking to the Site</li>
+                        <li>Trick, defraud, or mislead us and other users, especially in any attempt to learn sensitive account information</li>
+                        <li>Make improper use of our support services or submit false reports of abuse or misconduct</li>
+                        <li>Engage in any automated use of the system, such as using scripts to send comments or messages</li>
+                        <li>Interfere with, disrupt, or create an undue burden on the Site or the networks or services connected to the Site</li>
+                        <li>Attempt to impersonate another user or person or use the username of another user</li>
+                        <li>Sell or otherwise transfer your profile</li>
+                        <li>Use any information obtained from the Site in order to harass, abuse, or harm another person</li>
+                        <li>Use the Site as part of any effort to compete with us or otherwise use the Site and/or the Content for any revenue-generating endeavor or commercial enterprise</li>
+                        <li>Decipher, decompile, disassemble, or reverse engineer any of the software comprising or in any way making up a part of the Site</li>
+                        <li>Attempt to bypass any measures of the Site designed to prevent or restrict access to the Site, or any portion of the Site</li>
+                        <li>Harass, annoy, intimidate, or threaten any of our employees or agents engaged in providing any portion of the Site to you</li>
+                        <li>Delete the copyright or other proprietary rights notice from any Content</li>
+                        <li>Copy or adapt the Site's software</li>
+                        <li>Upload or transmit (or attempt to upload or to transmit) viruses, Trojan horses, or other material that interferes with any party's uninterrupted use and enjoyment of the Site</li>
+                        <li>Except as may be the result of standard search engine or Internet browser usage, use, launch, develop, or distribute any automated system, including without limitation, any spider, robot, cheat utility, scraper, or offline reader that accesses the Site</li>
+                        <li>Disparage, tarnish, or otherwise harm, in our opinion, us and/or the Site</li>
+                        <li>Use the Site in a manner inconsistent with any applicable laws or regulations</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section" id="user-generated-contributions">
+                    <h3>6. User Generated Contributions</h3>
+                    <p>The Site may invite you to chat, contribute to, or participate in blogs, message boards, online forums, and other functionality, and may provide you with the opportunity to create, submit, post, display, transmit, perform, publish, distribute, or broadcast content and materials to us or on the Site, including but not limited to text, writings, video, audio, photographs, graphics, comments, suggestions, or personal information or other material (collectively, "Contributions").</p>
+                    <p>Any Contribution you transmit to the Site will be treated as non-confidential and non-proprietary. When you create or make available any Contributions, you thereby represent and warrant that:</p>
+                    <ul>
+                        <li>The creation, distribution, transmission, public display, or performance, and the accessing, downloading, or copying of your Contributions do not and will not infringe the proprietary rights, including but not limited to the copyright, patent, trademark, trade secret, or moral rights of any third party</li>
+                        <li>You are the creator and owner of or have the necessary licenses, rights, consents, releases, and permissions to use and to authorize us, the Site, and other users of the Site to use your Contributions in any manner contemplated by the Site and these Terms of Service</li>
+                        <li>You have the written consent, release, and/or permission of each and every identifiable individual person in your Contributions to use the name or likeness of each and every such identifiable individual person to enable inclusion and use of your Contributions in any manner contemplated by the Site and these Terms of Service</li>
+                        <li>Your Contributions are not false, inaccurate, or misleading</li>
+                        <li>Your Contributions are not unsolicited or unauthorized advertising, promotional materials, pyramid schemes, chain letters, spam, mass mailings, or other forms of solicitation</li>
+                        <li>Your Contributions are not obscene, lewd, lascivious, filthy, violent, harassing, libelous, slanderous, or otherwise objectionable (as determined by us)</li>
+                        <li>Your Contributions do not ridicule, mock, disparage, intimidate, or abuse anyone</li>
+                        <li>Your Contributions do not advocate the violent overthrow of any government or incite, encourage, or threaten physical harm against another</li>
+                        <li>Your Contributions do not violate any applicable law, regulation, or rule</li>
+                        <li>Your Contributions do not violate the privacy or publicity rights of any third party</li>
+                        <li>Your Contributions do not contain any material that solicits personal information from anyone under the age of 18 or exploits people under the age of 18 in a sexual or violent manner</li>
+                        <li>Your Contributions do not violate any federal or state law concerning child pornography, or otherwise intended to protect the health or well-being of minors</li>
+                        <li>Your Contributions do not include any offensive comments that are connected to race, national origin, gender, sexual preference, or physical handicap</li>
+                        <li>Your Contributions do not otherwise violate, or link to material that violates, any provision of these Terms of Service, or any applicable law or regulation</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section" id="service-management">
+                    <h3>7. Service Management</h3>
+                    <p>We reserve the right, but not the obligation, to:</p>
+                    <ul>
+                        <li>Monitor the Site for violations of these Terms of Service</li>
+                        <li>Take appropriate legal action against anyone who, in our sole discretion, violates the law or these Terms of Service, including without limitation, reporting such user to law enforcement authorities</li>
+                        <li>In our sole discretion and without limitation, refuse, restrict access to, limit the availability of, or disable (to the extent technologically feasible) any of your Contributions or any portion thereof</li>
+                        <li>In our sole discretion and without limitation, notice, or liability, to remove from the Site or otherwise disable all files and content that are excessive in size or are in any way burdensome to our systems</li>
+                        <li>Otherwise manage the Site in a manner designed to protect our rights and property and to facilitate the proper functioning of the Site</li>
+                    </ul>
+                </div>
+                
+                <div class="terms-section" id="privacy-policy">
+                    <h3>8. Privacy Policy</h3>
+                    <p>We care about data privacy and security. Please review our <a href="privacy.html">Privacy Policy</a>: By using the Site, you agree to be bound by our Privacy Policy, which is incorporated into these Terms of Service. Please be advised the Site is hosted in the United States.</p>
+                </div>
+                
+                <div class="terms-section" id="term-termination">
+                    <h3>9. Term and Termination</h3>
+                    <p>These Terms of Service shall remain in full force and effect while you use the Site. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF SERVICE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF SERVICE OR OF ANY APPLICABLE LAW OR REGULATION.</p>
+                    <p>We may terminate your use or participation in the Site or delete any content or information that you posted at any time, without warning, in our sole discretion.</p>
+                </div>
+                
+                <div class="terms-section" id="modifications-interruptions">
+                    <h3>10. Modifications and Interruptions</h3>
+                    <p>We reserve the right to change, modify, or remove the contents of the Site at any time or for any reason at our sole discretion without notice. However, we have no obligation to update any information on our Site. We also reserve the right to modify or discontinue all or part of the Site without notice at any time.</p>
+                    <p>We will not be liable to you or any third party for any modification, price change, suspension, or discontinuance of the Site.</p>
+                    <p>We cannot guarantee the Site will be available at all times. We may experience hardware, software, or other problems or need to perform maintenance related to the Site, resulting in interruptions, delays, or errors. We reserve the right to change, revise, update, suspend, discontinue, or otherwise modify the Site at any time or for any reason without notice to you.</p>
+                </div>
+                
+                <div class="terms-section" id="governing-law">
+                    <h3>11. Governing Law</h3>
+                    <p>These Terms of Service and your use of the Site are governed by and construed in accordance with the laws of the State of California applicable to agreements made and to be entirely performed within the State of California, without regard to its conflict of law principles.</p>
+                </div>
+                
+                <div class="terms-section" id="dispute-resolution">
+                    <h3>12. Dispute Resolution</h3>
+                    <h4>12.1 Informal Negotiations</h4>
+                    <p>To expedite resolution and control the cost of any dispute, controversy, or claim related to these Terms of Service (each a "Dispute" and collectively, the "Disputes") brought by either you or us (individually, a "Party" and collectively, the "Parties"), the Parties agree to first attempt to negotiate any Dispute (except those Disputes expressly provided below) informally for at least thirty (30) days before initiating arbitration. Such informal negotiations commence upon written notice from one Party to the other Party.</p>
+                    
+                    <h4>12.2 Binding Arbitration</h4>
+                    <p>If the Parties are unable to resolve a Dispute through informal negotiations, the Dispute (except those Disputes expressly excluded below) will be finally and exclusively resolved by binding arbitration. YOU UNDERSTAND THAT WITHOUT THIS PROVISION, YOU WOULD HAVE THE RIGHT TO SUE IN COURT AND HAVE A JURY TRIAL.</p>
+                </div>
+                
+                <div class="terms-section" id="corrections">
+                    <h3>13. Corrections</h3>
+                    <p>There may be information on the Site that contains typographical errors, inaccuracies, or omissions, including descriptions, pricing, availability, and various other information. We reserve the right to correct any errors, inaccuracies, or omissions and to change or update the information on the Site at any time, without prior notice.</p>
+                </div>
+                
+                <div class="terms-section" id="disclaimer">
+                    <h3>14. Disclaimer</h3>
+                    <p>THE SITE IS PROVIDED ON AN AS-IS AND AS-AVAILABLE BASIS. YOU AGREE THAT YOUR USE OF THE SITE AND OUR SERVICES WILL BE AT YOUR SOLE RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, IN CONNECTION WITH THE SITE AND YOUR USE THEREOF, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+                </div>
+                
+                <div class="terms-section" id="limitations-liability">
+                    <h3>15. Limitations of Liability</h3>
+                    <p>IN NO EVENT WILL WE OR OUR DIRECTORS, EMPLOYEES, OR AGENTS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, SPECIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFIT, LOST REVENUE, LOSS OF DATA, OR OTHER DAMAGES ARISING FROM YOUR USE OF THE SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+                </div>
+                
+                <div class="terms-section" id="indemnification">
+                    <h3>16. Indemnification</h3>
+                    <p>You agree to defend, indemnify, and hold us harmless, including our subsidiaries, affiliates, and all of our respective officers, agents, partners, and employees, from and against any loss, damage, liability, claim, or demand, including reasonable attorneys' fees and expenses, made by any third party due to or arising out of: (1) your Contributions; (2) use of the Site; (3) breach of these Terms of Service; (4) any breach of your representations and warranties set forth in these Terms of Service; (5) your violation of the rights of a third party, including but not limited to intellectual property rights; or (6) any overt harmful act toward any other user of the Site with whom you connected via the Site.</p>
+                </div>
+                
+                <div class="terms-section" id="user-data">
+                    <h3>17. User Data</h3>
+                    <p>We will maintain certain data that you transmit to the Site for the purpose of managing the performance of the Site, as well as data relating to your use of the Site. Although we perform regular routine backups of data, you are solely responsible for all data that you transmit or that relates to any activity you have undertaken using the Site. You agree that we shall have no liability to you for any loss or corruption of any such data, and you hereby waive any right of action against us arising from any such loss or corruption of such data.</p>
+                </div>
+                
+                <div class="terms-section" id="electronic-communications">
+                    <h3>18. Electronic Communications</h3>
+                    <p>Visiting the Site, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Site, satisfy any legal requirement that such communication be in writing.</p>
+                </div>
+                
+                <div class="terms-section" id="miscellaneous">
+                    <h3>19. Miscellaneous</h3>
+                    <p>These Terms of Service and any policies or operating rules posted by us on the Site or in respect to the Site constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Service shall not operate as a waiver of such right or provision.</p>
+                    <p>We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control.</p>
+                </div>
+                
+                <div class="terms-section" id="contact-us">
+                    <h3>20. Contact Us</h3>
+                    <p>In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us at:</p>
+                    <p><strong>QODE STUDIO</strong><br>
+                    123 Digital Street<br>
+                    Tech City, CA 12345<br>
+                    United States<br>
+                    <strong>Phone:</strong> +1 (555) 123-4567<br>
+                    <strong>Email:</strong> legal@qodestudio.com</p>
+                </div>
+                
+                <p class="last-updated">These Terms of Service were last updated on January 1, 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>QODE STUDIO</h3>
+                    <p>Transforming ideas into exceptional digital experiences through innovative development and design.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.042-3.441.219-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.017 12.017 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html#services">Web Development</a></li>
+                        <li><a href="index.html#services">UI/UX Design</a></li>
+                        <li><a href="index.html#services">Game Development</a></li>
+                        <li><a href="index.html#services">Consulting</a></li>
+                        <li><a href="index.html#services">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html" style="color: var(--primary);">Terms of Service</a></li>
+                        <li><a href="cookies.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 QODE STUDIO. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
