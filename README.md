@@ -56,11 +56,11 @@ Our landing page represents a modern, responsive single-page application built w
 
 ## 🚀 Live Demo
 
-Visit our live website: [https://qodestudio.com](https://qodestudio.com) <!-- Replace with your actual domain -->
+Visit our live website: [https://qodestudio.com](#) 
 
 **Alternative Demo Links:**
-- GitHub Pages: [https://yourusername.github.io/qode-studio](https://yourusername.github.io/qode-studio)
-- Netlify: [https://qode-studio.netlify.app](https://qode-studio.netlify.app)
+- GitHub Pages: [https://goldenapplecoders-coder.github.io/qode-studio](https://goldenapplecoders-coder.github.io/qode-studio)
+- Netlify: [https://qode-studio.netlify.app](#)
 
 ## 🛠️ Technologies Used
 
